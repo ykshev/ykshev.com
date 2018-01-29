@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>likes</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-244.000000, -840.000000)">
+        <g id="likes" transform="translate(241.000000, 838.000000)">
+            <path d="M17.385,8.49 L17.355,8.55 L17.385,8.55 L17.385,9.75 C17.385,9.9100008 17.3550003,10.0649993 17.295,10.215 L15.39,14.61 C15.3099996,14.8400012 15.1650011,15.0249993 14.955,15.165 C14.7449989,15.3050007 14.5100013,15.375 14.25,15.375 L8.625,15.375 C8.2849983,15.375 7.99000125,15.2500012 7.74,15 C7.48999875,14.7499988 7.365,14.4550017 7.365,14.115 L7.365,7.875 C7.365,7.5549984 7.48999875,7.26000135 7.74,6.99 L11.85,2.865 L12.525,3.54 C12.6950008,3.71000085 12.78,3.9249987 12.78,4.185 L12.78,4.395 L12.165,7.26 L16.125,7.26 C16.4650017,7.26 16.7599988,7.3799988 17.01,7.62 C17.2600013,7.8600012 17.385,8.1499983 17.385,8.49 Z M3.615,15.375 L3.615,7.875 L6.135,7.875 L6.135,15.375 L3.615,15.375 Z" id="thumb_up---material" fill="#A4A4A4"></path>
+            <rect id="Rectangle-9" x="0" y="0" width="20" height="20"></rect>
+        </g>
+    </g>
+</svg>
