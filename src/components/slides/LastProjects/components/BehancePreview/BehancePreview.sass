@@ -1,0 +1,68 @@
+@import 'styles/_globals.sass'
+$padding: 10px
+
+.BehancePreview
+  display: flex
+  flex-flow: column nowrap
+  max-width: 208px
+  min-width: 190px
+  width: 100%
+  background-color: #ffffff
+  box-shadow: 0 1px 2px 0 rgba(148,148,150,0.37)
+  border-radius: 5px 5px 3px 3px
+  margin-right: 20px
+  margin-bottom: 20px
+  transition: all 250ms ease-in-out
+  text-decoration: none
+  color: $color-font-basic
+  &:hover
+    box-shadow: 0 10px 20px -3px rgba(66,68,77,0.18), 0 2px 12px 0 rgba(148,148,150,0.14);
+  &__title, &__name, &__tag, &__stats
+    margin: 0 $padding
+  &__name, &__tag
+    font-family: 'Helmet', sans-serif
+    color: $color-font-gray
+  &__image
+    overflow: hidden
+  &__title
+    flex: 2 auto
+    margin-bottom: 16px
+    margin-top: 8px
+  &__name
+    font-size: 12px
+    margin-bottom: 18px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 20px
+      border-bottom: 1px solid rgba(0,0,0,0.08)
+      top: 20px
+      left: 0
+  &__tag
+    font-size: 11px
+  &__stats
+    display: block
+    position: relative
+    align-items: 
+    margin-top: 10px
+    padding-top: 6px
+    padding-bottom: 4px;
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      border-bottom: 1px solid rgba(0,0,0,0.08)
+      top: 0px
+      left: 0
+      right: 0
+  &__stat
+    margin-right: 14px
+  &__stats-number
+    font-size: 11px
+    display: inline-block
+  &__stats-icon
+    margin-right: 5px
+    display: inline-block
+    position: relative;
+    top: 1px;

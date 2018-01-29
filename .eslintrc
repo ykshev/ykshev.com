@@ -1,0 +1,9 @@
+{
+  "extends": ["standard", "standard-jsx"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  }
+}

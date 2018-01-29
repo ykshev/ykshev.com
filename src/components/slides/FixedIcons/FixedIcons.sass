@@ -1,0 +1,26 @@
+@import 'styles/_globals.sass'
+
+.FixedIcons
+  position: fixed
+  bottom: 244px
+  right: 32px
+  display: flex
+  flex-flow: column nowrap
+  &__icon
+    display: inline-block
+    padding: 4px
+    margin-bottom: 20px
+  &__email
+    padding: 2px
+    transform: rotate(-90deg)
+    position: absolute
+    bottom: -153px;
+    right: -76px;
+    &:before
+      content: ''
+      height: 1px
+      width: 18px
+      position: absolute
+      top: 33px;
+      background: $color-accent
+      right: -36px;

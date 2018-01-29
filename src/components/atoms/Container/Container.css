@@ -1,0 +1,6 @@
+.Container {
+  display: block; }
+  .Container--fixed {
+    margin: 20vh 15%; }
+  .Container--text {
+    max-width: 800px; }

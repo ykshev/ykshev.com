@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400i;Montserrat:300,600");
+@font-face {
+  font-family: 'Helmet';
+  src: url("../assets/fonts/helmet-regular-webfont.woff2") format("woff2"), url("../assets/fonts/helmet-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IM Fell French Canon', serif;
+  color: #39383C;
+  background-color: #FAFAFA; }
+
+h2 {
+  font-size: 38px;
+  line-height: 1.6;
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: normal; }
+
+h3 {
+  font-size: 26px;
+  line-height: 1.6;
+  font-family: 'IM Fell French Canon', serif;
+  font-weight: normal; }
+
+h5 {
+  font-family: 'Helmet', serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: normal; }
+
+h6 {
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 4px 0 6px; }
+
+a {
+  color: #2145FF;
+  text-decoration: none; }

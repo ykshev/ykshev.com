@@ -1,0 +1,64 @@
+.BehancePreview {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 208px;
+  min-width: 190px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(148, 148, 150, 0.37);
+  border-radius: 5px 5px 3px 3px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: all 250ms ease-in-out;
+  text-decoration: none;
+  color: #39383C; }
+  .BehancePreview:hover {
+    box-shadow: 0 10px 20px -3px rgba(66, 68, 77, 0.18), 0 2px 12px 0 rgba(148, 148, 150, 0.14); }
+  .BehancePreview__title, .BehancePreview__name, .BehancePreview__tag, .BehancePreview__stats {
+    margin: 0 10px; }
+  .BehancePreview__name, .BehancePreview__tag {
+    font-family: 'Helmet', sans-serif;
+    color: #817f87; }
+  .BehancePreview__image {
+    overflow: hidden; }
+  .BehancePreview__title {
+    flex: 2 auto;
+    margin-bottom: 16px;
+    margin-top: 8px; }
+  .BehancePreview__name {
+    font-size: 12px;
+    margin-bottom: 18px;
+    position: relative; }
+    .BehancePreview__name:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      top: 20px;
+      left: 0; }
+  .BehancePreview__tag {
+    font-size: 11px; }
+  .BehancePreview__stats {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-bottom: 4px; }
+    .BehancePreview__stats:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      top: 0px;
+      left: 0;
+      right: 0; }
+  .BehancePreview__stat {
+    margin-right: 14px; }
+  .BehancePreview__stats-number {
+    font-size: 11px;
+    display: inline-block; }
+  .BehancePreview__stats-icon {
+    margin-right: 5px;
+    display: inline-block;
+    position: relative;
+    top: 1px; }
