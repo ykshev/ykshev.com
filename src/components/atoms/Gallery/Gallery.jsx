@@ -10,7 +10,7 @@ class Gallery extends Component {
     children: []
   }
   state = {
-    activeIndex: this.props.currentImageIndex || 0
+    activeIndex: this.props.activeIndex || 0
   }
 
   nextSlide = () => {

@@ -6,7 +6,7 @@ import BehancePreview from './components/BehancePreview/BehancePreview'
 import Container from 'components/atoms/Container/Container'
 
 const LastProjects = () => (
-  <Container isFixed>
+  <Container isFixed style={{ marginRight: '5%' }}>
     <div className='LastProjects'>
       <h5 className='LastProjects__title'>My Latest freelance projects:</h5>
       <div className='LastProjects__items'>
@@ -26,7 +26,7 @@ const LastProjects = () => (
           className='LastProjects__last-item'
         >
           <h3 className='LastProjects__last-item-title'>
-            See more projects on Behance ›
+            See more on Behance ›
           </h3>
         </a>
       </div>
