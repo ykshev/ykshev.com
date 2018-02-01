@@ -6,10 +6,11 @@
     flex-flow: row wrap
   &__last-item
     max-width: 208px
-    min-width: 190px
+    min-width: 150px
     width: 100%
-    min-height: 300px
+    min-height: 180px
     margin-bottom: 20px
+    margin-right: 20px
     border: 1px solid #E7E7E7
     border-radius: 5px 5px 3px 3px
     background: #FAFAFA;
@@ -18,7 +19,15 @@
     color: $color-font-basic
     &:hover
       box-shadow: 0 10px 20px -3px rgba(66,68,77,0.18), 0 2px 12px 0 rgba(148,148,150,0.14);
+    @media screen and (max-width: $media-mobile)
+      flex: 2 100%;
+      max-width: 100%;
+      min-height: auto;
+      text-align: center;
+      border-radius: 0;
+
   &__last-item-title
     padding: 0px 22px
+
     
 

@@ -17,12 +17,18 @@ h2 {
   line-height: 1.6;
   font-family: 'IM Fell French Canon', serif;
   font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 32px; } }
 
 h3 {
   font-size: 26px;
   line-height: 1.6;
   font-family: 'IM Fell French Canon', serif;
   font-weight: normal; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 20px; } }
 
 h5 {
   font-family: 'Helmet', serif;

@@ -5,6 +5,10 @@
   display: flex;
   flex-flow: column nowrap;
   z-index: 10; }
+  @media screen and (max-width: 768px) {
+    .FixedIcons {
+      right: 5px;
+      bottom: 217px; } }
   .FixedIcons__icon {
     display: inline-block;
     padding: 4px;

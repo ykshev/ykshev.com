@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Container from 'components/atoms/Container/Container'
 import Image from 'components/atoms/Image/Image'
-import Gallery from 'components/atoms/Gallery/Gallery'
+import Сarousel from 'components/atoms/Сarousel/Сarousel'
 import Button from 'components/atoms/Button/Button'
 
 import './Designbase.css'
@@ -32,7 +32,7 @@ const Designbase = () => (
         <Image src={logoSvg} />
       </div>
       <div className='Designbase__gallery'>
-        <Gallery activeIndex={1}>{images}</Gallery>
+        <Сarousel activeIndex={1}>{images}</Сarousel>
       </div>
       <div className='Designbase__description-container'>
         <div className='Designbase__description-col'>
