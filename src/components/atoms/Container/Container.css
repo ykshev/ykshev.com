@@ -2,5 +2,8 @@
   display: block; }
   .Container--fixed {
     margin: 20vh 15%; }
+    @media screen and (max-width: 768px) {
+      .Container--fixed {
+        margin: 12vh 10% 40px; } }
   .Container--text {
     max-width: 800px; }

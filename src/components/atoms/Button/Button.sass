@@ -3,9 +3,9 @@
 .Button
   font-family: 'Helmet', sans-serif;
   font-weight: normal
-  text-transform: uppercase
-  font-size: 16px
-  letter-spacing: 2px
+  // text-transform: uppercase
+  font-size: 22px
+  letter-spacing: -1px
   display: inline-block
   padding: 18px 26px
   text-align: center
@@ -14,14 +14,21 @@
   margin-bottom: 12px
   transition: $transition-default
   &:hover
-    box-shadow: 0 8px 9px -2px rgba(123,12,32,0.30);
     background-color: desaturate(darken( $color-button-default, 8% ), 15%)
   &--responsive
     display: block
+  &--white
+    color: $color-accent
+    background-color: #fff
+    &:hover
+      box-shadow: none
+      background-color: #fff
+      text-decoration: underline
+
   &--outline
     background: none
     border: 1px solid rgba(255,255,255,0.2)
-    color: $color-font-ondark
+    color: white
     &:hover
       background-color: rgba(0,0,0,0.2)
       border: 1px solid rgba(0,0,0,0.1)

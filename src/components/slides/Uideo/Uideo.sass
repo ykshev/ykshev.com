@@ -1,0 +1,57 @@
+@import 'styles/_globals.sass'
+$swipe-columns: 860px
+
+.Uideo
+  // background: #353537
+  background: url('./assets/bg.jpg')
+  padding: 12vh 0 12vh 8%
+  display: flex
+  flex-flow: row wrap
+  color: #fff
+  @media screen and (max-width: $swipe-columns)
+    padding: 0
+  &__title
+    color: #fff
+    margin-bottom: 64px
+    margin-left: -4px
+    position: relative
+    @media screen and (max-width: $swipe-columns)
+      margin-bottom: 32px
+    &:before
+      content: '#2'
+      position: absolute
+      left: -96px
+      opacity: 0.2
+      @media screen and (max-width: 1024px)
+        display: none
+  &__left
+    flex: 1 25%
+    padding-bottom: 80px
+    @media screen and (max-width: $swipe-columns)
+      order: 2
+      flex: 1 auto
+      padding: 0 8% 12vh 8%
+  &__right
+    flex: 1 75%
+    overflow-x: auto
+    @media screen and (max-width: $swipe-columns)
+      order: 1
+      flex: 1 auto
+      padding-top: 60px
+  &__right-image
+    transform: translateX(10%)
+    max-width: none
+    height: 840px
+    @media screen and (max-width: $swipe-columns)
+      height: auto
+      max-width: 100%
+      transform: none
+
+  &__text-block
+    margin-top: 24px
+  &__text-heading
+    color: $color-font-ondark
+    margin-bottom: 12px
+    opacity: 0.9
+  &__buttons
+    margin-top: 72px

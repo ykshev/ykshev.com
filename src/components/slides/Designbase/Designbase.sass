@@ -1,12 +1,26 @@
 @import 'styles/_globals.sass'
 
+
 .Designbase
+  background: $color-accent
+  position: relative
+  // background: url('./assets/db-bg.svg') 
+  // background-size: cover
   &__logo
     display: flex
     justify-content: center;
-    padding: 10vh 0 8vh
+    padding: 96px 0 40px
+    color: #fff
+    &:before
+      content: '#1'
+      position: absolute
+      left: 32px
+      opacity: 0.2
+      @media screen and (max-width: $media-mobile)
+        display: none
   &__site-container
     padding: 1.5%
+    padding-bottom: 60px
   &__site-image
     border-radius: 4px
     box-shadow: 0 42px 34px 0 rgba(27,27,30,0.07), 0 22px 54px -3px rgba(27,27,30,0.62);
@@ -14,8 +28,9 @@
     display: flex
     flex-flow: row wrap
     color: #fff
-    margin: 4vh 12% 12vh
-    padding-bottom: 20vh
+    margin: 0 8%
+    padding-top: 20px
+    padding-bottom: 80px
   &__description-col
     flex: 1
     margin-right: 5%

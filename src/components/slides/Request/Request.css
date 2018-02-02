@@ -1,0 +1,52 @@
+.Request {
+  display: flex;
+  flex-flow: row nowrap; }
+  @media screen and (max-width: 768px) {
+    .Request {
+      flex-flow: row wrap; } }
+  .Request__left {
+    flex: 1 75%;
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    @media screen and (max-width: 768px) {
+      .Request__left {
+        border-right: none;
+        flex: 1 100%;
+        order: 2; } }
+  .Request__right {
+    flex: 1 25%;
+    padding-left: 8%; }
+    @media screen and (max-width: 768px) {
+      .Request__right {
+        flex: 1 100%;
+        padding-left: 0;
+        order: 1; } }
+  .Request__right-text {
+    font-size: 19px;
+    font-family: 'Helmet', sans-serif; }
+  .Request__title {
+    font-size: 58px;
+    max-width: 550px;
+    margin-bottom: 80px;
+    margin-right: 8%; }
+  .Request__sub-title {
+    color: #817f87;
+    margin-top: 48px; }
+  .Request__email {
+    font-size: 38px;
+    font-family: 'Helmet', sans-serif;
+    color: #39383C;
+    position: relative;
+    z-index: 10; }
+    .Request__email:before {
+      content: '';
+      position: absolute;
+      top: 14px;
+      width: 100%;
+      height: 18px;
+      transform: rotate(-2deg);
+      background: #FEF14D;
+      z-index: -1;
+      transition: all 250ms ease-in-out; }
+    .Request__email:hover:before {
+      height: 5px;
+      transform: translateY(22px); }

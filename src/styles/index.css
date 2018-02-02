@@ -12,6 +12,16 @@ body {
   color: #39383C;
   background-color: #FAFAFA; }
 
+h1 {
+  font-family: 'Helmet', sans-serif;
+  font-size: 72px;
+  letter-spacing: -3px;
+  font-weight: normal;
+  margin: 48px 0; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 54px; } }
+
 h2 {
   font-size: 38px;
   line-height: 1.6;
@@ -45,7 +55,7 @@ h6 {
   margin: 4px 0 6px; }
 
 a {
-  color: #2145FF;
+  color: #0b00ef;
   text-decoration: none; }
 
 p {

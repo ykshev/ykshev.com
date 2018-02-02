@@ -18,7 +18,7 @@ class Сarousel extends Component {
   prevPositionX = 0
 
   nextSlide = () => {
-    const slidesLength = this.props.children && this.props.children.length
+    const slidesLength = this.props.children.length
     this.setState(prevState => {
       if (prevState.activeIndex < slidesLength - 1) {
         return { activeIndex: prevState.activeIndex + 1 }
@@ -29,7 +29,7 @@ class Сarousel extends Component {
   }
 
   prevSlide = () => {
-    const slidesLength = this.props.children && this.props.children.length
+    const slidesLength = this.props.children.length
     this.setState(prevState => {
       if (prevState.activeIndex > 0) {
         return { activeIndex: prevState.activeIndex - 1 }
@@ -41,7 +41,6 @@ class Сarousel extends Component {
 
   onPositionChanged = ({ position: { x } }) => {
     if (!this.state.isTouched) return
-    // console.log('this.prevPositionX', this.prevPositionX, x)
     console.log(this.prevPositionX)
     if (this.prevPositionX !== 0) {
       this.setState({
@@ -57,7 +56,6 @@ class Сarousel extends Component {
 
   onSwipeEnd = props => {
     const { translateX } = this.state
-
     if (translateX === 0) return
 
     translateX > 0 ? this.prevSlide() : this.nextSlide()
@@ -106,7 +104,6 @@ class Сarousel extends Component {
                       : '0'
                 }}
                 onClick={() => {
-                  console.log(activeIndex, index)
                   if (activeIndex + 1 === index) {
                     this.nextSlide()
                   } else if (activeIndex - 1 === index) {

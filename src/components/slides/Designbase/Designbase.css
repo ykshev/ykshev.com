@@ -1,30 +1,38 @@
-.Designbase__logo {
-  display: flex;
-  justify-content: center;
-  padding: 10vh 0 8vh; }
-
-.Designbase__site-container {
-  padding: 1.5%; }
-
-.Designbase__site-image {
-  border-radius: 4px;
-  box-shadow: 0 42px 34px 0 rgba(27, 27, 30, 0.07), 0 22px 54px -3px rgba(27, 27, 30, 0.62); }
-
-.Designbase__description-container {
-  display: flex;
-  flex-flow: row wrap;
-  color: #fff;
-  margin: 4vh 12% 12vh;
-  padding-bottom: 20vh; }
-
-.Designbase__description-col {
-  flex: 1;
-  margin-right: 5%;
-  min-width: 200px; }
-
-.Designbase__description-buttons {
-  padding-top: 22px; }
-
-.Designbase__description-title {
-  color: #E6E642;
-  margin-bottom: 12px; }
+.Designbase {
+  background: #0b00ef;
+  position: relative; }
+  .Designbase__logo {
+    display: flex;
+    justify-content: center;
+    padding: 96px 0 40px;
+    color: #fff; }
+    .Designbase__logo:before {
+      content: '#1';
+      position: absolute;
+      left: 32px;
+      opacity: 0.2; }
+      @media screen and (max-width: 768px) {
+        .Designbase__logo:before {
+          display: none; } }
+  .Designbase__site-container {
+    padding: 1.5%;
+    padding-bottom: 60px; }
+  .Designbase__site-image {
+    border-radius: 4px;
+    box-shadow: 0 42px 34px 0 rgba(27, 27, 30, 0.07), 0 22px 54px -3px rgba(27, 27, 30, 0.62); }
+  .Designbase__description-container {
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+    margin: 0 8%;
+    padding-top: 20px;
+    padding-bottom: 80px; }
+  .Designbase__description-col {
+    flex: 1;
+    margin-right: 5%;
+    min-width: 200px; }
+  .Designbase__description-buttons {
+    padding-top: 22px; }
+  .Designbase__description-title {
+    color: #d5d575;
+    margin-bottom: 12px; }

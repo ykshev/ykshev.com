@@ -8,6 +8,7 @@ const Button = ({
   isOutline,
   className,
   isResponsive,
+  isWhite,
   href,
   children,
   ...props
@@ -15,7 +16,8 @@ const Button = ({
   const buttonClassName = classNames('Button', className, {
     'Button--real': isReal,
     'Button--outline': isOutline,
-    'Button--responsive': isResponsive
+    'Button--responsive': isResponsive,
+    'Button--white': isWhite
   })
 
   if (isReal) {
