@@ -14,7 +14,7 @@ const Coding = () => (
         production ready service on my own. And that’s fun.
       </h2>
       <h5 className='Coding__build-heading'>I build with:</h5>
-      <Image className='Coding__logos' src={JsLogosSvg} />
+      <Image className='Coding__logos' src={JsLogosSvg} isResponsive />
     </div>
   </Container>
 )

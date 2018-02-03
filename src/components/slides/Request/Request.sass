@@ -27,6 +27,9 @@
     max-width: 550px
     margin-bottom: 80px
     margin-right: 8%
+    @media screen and (max-width: $media-mobile)
+      font-size: 32px
+      margin-bottom: 32px
   &__sub-title
     color: $color-font-gray
     margin-top: 48px
@@ -36,6 +39,9 @@
     color: $color-font-basic
     position: relative
     z-index: 10
+    padding-bottom: 60px
+    @media screen and (max-width: $media-mobile)
+      font-size: 24px
     &:before
       content: ''
       position: absolute

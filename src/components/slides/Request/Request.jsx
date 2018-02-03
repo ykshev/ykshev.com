@@ -14,7 +14,7 @@ const data = [
       'Graphic Design. I’m more a designer engineer, rather than a graphic designer '
   },
   {
-    title: 'career',
+    title: 'experience',
     content:
       '3 years in an IT-company, 2 years in E-commerce, 2 years in various freelance projects'
   }
@@ -32,8 +32,8 @@ const Request = () => (
       </a>
     </div>
     <div className='Request__right'>
-      {data.map(item => (
-        <div>
+      {data.map((item, index) => (
+        <div key={index}>
           <h5 className='Request__sub-title'>{item.title}</h5>
           <p className='Request__right-text'>{item.content}</p>
         </div>
