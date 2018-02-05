@@ -29,8 +29,8 @@ const Designbase = () => (
       <div className='Designbase__description-col'>
         <h5 className='Designbase__description-title'>About</h5>
         <p>
-          Simple tool to save pics on the web to your Dropbox account with
-          blazing fast and customizable web interface
+          Designbase is a simple tool to save pics on the web to your Dropbox
+          account with blazing fast and customizable web interface
         </p>
       </div>
       <div className='Designbase__description-col'>

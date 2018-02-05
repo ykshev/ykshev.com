@@ -45,7 +45,8 @@ h5 {
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #5a575d; }
 
 h6 {
   font-family: 'Montserrat', serif;

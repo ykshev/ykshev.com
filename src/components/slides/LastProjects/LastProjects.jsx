@@ -10,8 +10,9 @@ const LastProjects = () => (
     <div className='LastProjects'>
       <h5 className='LastProjects__title'>My Latest freelance projects:</h5>
       <div className='LastProjects__items'>
-        {projects.map(project => (
+        {projects.map((project, index) => (
           <BehancePreview
+            key={index}
             title={project.title}
             tag={project.tag}
             likes={project.likes}

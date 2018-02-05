@@ -18,7 +18,7 @@ const FixedIcons = () => (
       <Image src={instagramSvg} />
     </a>
     <a href='mailto:andrei@ykshev.com' className='FixedIcons__email'>
-      <h5>andrei@ykshev.com</h5>
+      <h5 className='FixedIcons__email-title'>andrei@ykshev.com</h5>
     </a>
   </div>
 )
