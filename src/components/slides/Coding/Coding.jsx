@@ -11,7 +11,7 @@ const Coding = () => (
       {/* <h5>Pet projects</h5> */}
       <h2 className='Coding__text'>
         Besides a classic design job, I'm keen on creating personal digital
-        products, that's fun. There are a few projects below
+        products, that's fun. There are a few below
       </h2>
       <h5 className='Coding__build-heading'>I build with:</h5>
       <Image className='Coding__logos' src={JsLogosSvg} isResponsive />

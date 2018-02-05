@@ -39,19 +39,10 @@ class Сarousel extends Component {
     })
   }
 
-  onPositionChanged = ({ position: { x } }) => {
-    if (!this.state.isTouched) return
-    console.log(this.prevPositionX)
-    if (this.prevPositionX !== 0) {
-      this.setState({
-        translateX: this.state.translateX + (this.prevPositionX - x)
-      })
-    }
-    this.prevPositionX = x
-  }
-
-  onSwipeMove = ({ x }) => {
+  onSwipeMove = ({ x, y }) => {
+    console.log(x, y)
     this.setState({ translateX: x })
+    return true
   }
 
   onSwipeEnd = props => {
