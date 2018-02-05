@@ -9,9 +9,9 @@ const Coding = () => (
   <Container isFixed isText>
     <div className='Coding'>
       {/* <h5>Pet projects</h5> */}
-      <h2 className='Coding__intro'>
-        Besides a classic design job, I'm fond of creating digital products on
-        my own. There're a few of my “pet” projects below
+      <h2 className='Coding__text'>
+        Besides a classic design job, I'm keen on creating personal digital
+        products, that's fun. There are a few projects below
       </h2>
       <h5 className='Coding__build-heading'>I build with:</h5>
       <Image className='Coding__logos' src={JsLogosSvg} isResponsive />
