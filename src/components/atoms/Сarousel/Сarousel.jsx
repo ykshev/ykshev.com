@@ -18,6 +18,7 @@ class Сarousel extends Component {
   prevPositionX = 0
 
   nextSlide = () => {
+    if (!this.isActive) return
     const slidesLength = this.props.children.length
     this.setState(prevState => {
       if (prevState.activeIndex < slidesLength - 1) {
@@ -25,10 +26,11 @@ class Сarousel extends Component {
       } else {
         return { activeIndex: 0 }
       }
-    })
+    }, () => (this.isActive = false))
   }
 
   prevSlide = () => {
+    if (!this.isActive) return
     const slidesLength = this.props.children.length
     this.setState(prevState => {
       if (prevState.activeIndex > 0) {
@@ -36,11 +38,10 @@ class Сarousel extends Component {
       } else {
         return { activeIndex: slidesLength - 1 }
       }
-    })
+    }, () => (this.isActive = false))
   }
 
-  onSwipeMove = ({ x, y }) => {
-    console.log(x, y)
+  onSwipeMove = ({ x }) => {
     this.setState({ translateX: x })
     return true
   }
@@ -48,13 +49,17 @@ class Сarousel extends Component {
   onSwipeEnd = props => {
     const { translateX } = this.state
     if (translateX === 0) return
+    this.isActive = true
 
-    translateX > 0 ? this.prevSlide() : this.nextSlide()
+    if (translateX > 0) {
+      this.prevSlide()
+    } else {
+      this.nextSlide()
+    }
     this.setState({ translateX: 0 })
-    this.isActive = false
   }
 
-  render () {
+  render() {
     const { children, width = 80 } = this.props
     const { activeIndex, translateX } = this.state
 
@@ -77,7 +82,7 @@ class Сarousel extends Component {
             style={{
               transform: `translate3d(${translateXPercentage}, 0px, 0px) ${
                 translateX !== 0 ? `translateX(${translateXWidth})` : ''
-              }`,
+                }`,
               transitionDuration: translateX === 0 ? '350ms' : '50ms'
             }}
             onDragStart={e => e.preventDefault()}
@@ -95,10 +100,10 @@ class Сarousel extends Component {
                       : '0'
                 }}
                 onClick={() => {
+                  this.isActive = true
                   if (activeIndex + 1 === index) {
                     this.nextSlide()
                   } else if (activeIndex - 1 === index) {
-                    console.log('prev')
                     this.prevSlide()
                   }
                 }}

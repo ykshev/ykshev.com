@@ -8,7 +8,7 @@ const Hello = () => (
     <div className='Hello'>
       <h5 className='Hello__name'>Andrei Yakushau</h5>
       <h2 className='Hello__intro'>
-        I’m a <i>freelancer</i> and <i>interface designer</i> in most broad
+        I’m a <i>freelancer</i> and <i>user interface</i> designer in most broad
         sense of this title. I’m passionate about creating effective digital
         products.
       </h2>
