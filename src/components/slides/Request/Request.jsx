@@ -24,9 +24,9 @@ const Request = () => (
   <Container className='Request' isFixed>
     <div className='Request__left'>
       <h2 className='Request__title'>
-        Feel free to request an estimat for your design project
+        Feel free to request an estimate for your design project
       </h2>
-      <h5 className='Request__sub-title'>or jast say hello:</h5>
+      <h5 className='Request__sub-title'>or just say hello:</h5>
       <a href='mailto:andrei@ykshev.com' className='Request__email'>
         andrei@ykshev.com
       </a>
