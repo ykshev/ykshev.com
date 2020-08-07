@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import Container from 'components/atoms/Container/Container'
-import './Request.css'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Container from 'components/atoms/Container/Container';
+import './Request.css';
 
 const data = [
   {
@@ -10,14 +10,13 @@ const data = [
   },
   {
     title: 'downsides',
-    content:
-      'Graphic Design. I’m more a designer engineer, rather than a graphic designer '
-  },
-  {
-    title: 'experience',
-    content:
-      '3 years in an IT-company, 2 years in E-commerce, 2 years in various freelance projects'
+    content: `Graphic Design. We're more designer engineers, rather than graphic designers `
   }
+  // {
+  //   title: 'experience',
+  //   content:
+  //     '3 years in an IT-company, 2 years in E-commerce, 2 years in various freelance projects'
+  // }
 ]
 
 const Request = () => (

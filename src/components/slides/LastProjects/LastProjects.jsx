@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import './LastProjects.css'
-import projects from './data.js'
-import BehancePreview from './components/BehancePreview/BehancePreview'
-import Container from 'components/atoms/Container/Container'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import './LastProjects.css';
+import projects from './data.js';
+import BehancePreview from './components/BehancePreview/BehancePreview';
+import Container from 'components/atoms/Container/Container';
 
 const LastProjects = () => (
   <Container isFixed style={{ marginRight: '5%' }}>
     <div className='LastProjects'>
-      <h5 className='LastProjects__title'>My Latest freelance projects:</h5>
+      <h5 className='LastProjects__title'>Latest projects:</h5>
       <div className='LastProjects__items'>
         {projects.map((project, index) => (
           <BehancePreview
