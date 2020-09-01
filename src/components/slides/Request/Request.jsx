@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import Container from 'components/atoms/Container/Container';
-import './Request.css';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Container from 'components/atoms/Container/Container'
+import './Request.css'
 
 const data = [
   {

@@ -6,7 +6,7 @@ import Container from 'components/atoms/Container/Container'
 const Hello = () => (
   <Container isFixed isText>
     <div className='Hello'>
-      <h5 className='Hello__name'>Ykshev agency</h5>
+      <h5 className='Hello__name'>Yakushau agency</h5>
       <h2 className='Hello__intro'>
         {/* I’m a <i>freelancer</i> and <i>user interface</i> designer in most broad
         sense of this title. I’m passionate about creating effective digital
